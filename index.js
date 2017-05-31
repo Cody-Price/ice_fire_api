@@ -18,12 +18,22 @@ app.get('/api/v1/houses', function(req, res) {
   request('http://www.anapioficeandfire.com/api/houses?pageSize=50&hasTitles=true&hasSeats=true&hasAncestralWeapons=true',
     function(error, response, body) {
       if(error) {
-        console.log(error)
-        res.status(401).send(error)
+        console.log(error);
+        res.status(401).send(error);
       }
       res.status(200).send(body);
     }
-  )
+  );
+});
+
+app.post('/api/v1/character', function(req, res) {
+  request(req.body.url, function(error, response, body) {
+    if(error) {
+      console.log(error);
+      req.status(401).send(error);
+    }
+    res.status(200).send(body)
+  });
 });
 
 app.listen(port);
