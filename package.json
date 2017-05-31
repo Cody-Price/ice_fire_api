@@ -1,0 +1,17 @@
+{
+  "name": "fire_ice_api",
+  "version": "1.0.0",
+  "description": "Api for client side",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taylor Moore",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-cors": "0.0.3"
+  }
+}
