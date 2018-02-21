@@ -52,9 +52,9 @@
 ]
 ```
 
-### `POST: /api/v1/character`
+### `GET: /api/v1/character/:id`
 
-  * This endpoint expects a body of `{ url: '...url' }` provided as a string.
+  * This endpoint expects an param to be passed in the url, the id is that of a single character
   * You can expect receive a single JSON object.
 
 ```

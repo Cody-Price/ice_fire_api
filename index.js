@@ -26,8 +26,8 @@ app.get('/api/v1/houses', function(req, res) {
   );
 });
 
-app.post('/api/v1/character', function(req, res) {
-  request(req.body.url, function(error, response, body) {
+app.get('/api/v1/character/:id', function(req, res) {
+  request('https://www.anapioficeandfire.com/api/characters/' + req.params.id, function(error, response, body) {
     if(error) {
       console.log(error);
       req.status(401).send(error);
