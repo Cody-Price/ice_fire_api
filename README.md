@@ -2,6 +2,7 @@
 
 * Run `npm` install to install package dependencies
 * run `npm start` to start the server.
+* the server should be running on `localhost:3001`
 
 
 ## Endpoints
